@@ -135,6 +135,15 @@ iframe {
 
 #info-content {
     margin: 0 30px;
+    width: 400px;
+}
+
+.text {
+    text-align: left;
+}
+
+#day {
+    white-space: nowrap;
 }
 
 footer {

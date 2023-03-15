@@ -20,6 +20,10 @@
     background-color: whitesmoke;
 }
 
+.chef-left * {
+    text-align: center;
+}
+
 .chef_content {
     margin: 0 5%;
 }
@@ -28,7 +32,7 @@
     width: 100%;
 }
 
-#caption {
+#caption { 
     font-family: 'Playball', cursive;
     font-size: 52px;
 }

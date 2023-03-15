@@ -47,8 +47,11 @@ a {
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 120px;
     color: #F5EFE6;
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px;
 }
 
 body {
@@ -84,6 +87,8 @@ iframe {
     width: 100vw;
     height: 100vh;
     background-image: url(../img/restaurant_1.jpg);
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode:lighten;
     background-position: center center;
     background-size: cover;
     display: flex;

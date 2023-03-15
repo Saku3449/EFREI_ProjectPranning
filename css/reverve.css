@@ -1,0 +1,30 @@
+form  {
+    margin: auto;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-left: 40%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+input, select, textarea {
+    width: 20%;
+    margin-bottom: 16px;
+}
+
+.reservation {
+    text-align: left;
+    margin-left: 35%;
+}
+
+#log p {
+    font-size: 28px;
+    margin: 80px 0 50px 0;
+}
+
+#log ul {
+    font-size: 20px;
+    margin: 10px;
+}

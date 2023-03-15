@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    position: fixed;
+    inset: 0 0 85% 0;
+    height: 70px;
+    padding: 20px 5%;
+
+    background-color: #505455;
+    color: #000;
+
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+
+    list-style: none;
+    text-align: left;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+header p {
+    color: #F5EFE6;
+    font-size: 26px;
+}
+
+a {
+    text-decoration: none;
+    color: #F5EFE6;
+}
+
+#la {
+    color: #a7a6a6;
+    font-size: 12px;
+    margin: 14px;
+}
+
+h1 {
+    font-size: 90px;
+    color: #F5EFE6;
+}
+
+body {
+    background-color: #D0C9A2;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 10% 10% 3% 10%;
+}
+
+section {
+    margin-top: 120px;
+    text-align: center;
+    align-items: center;
+}
+
+img {
+    width: 500px;
+}
+
+iframe {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.firstview {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/restaurant_1.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    text-align: center;
+    margin: 0 100px;
+}
+
+.content-right, .content-left {
+    width: 50%;
+    margin: 2%;
+}
+
+.menu-content {
+    display: flex;
+}
+
+.menu-content-left {
+    width: 20%;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+
+.menu-content-right {
+    width: 80%;
+}
+
+footer {
+    text-align: center;
+    background-color: #505455;
+    color: #F5EFE6;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+
+footer p {
+    margin: 2%;
+}
+
+footer a {
+    margin: 0 10px;
+}

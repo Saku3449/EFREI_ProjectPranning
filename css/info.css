@@ -1,0 +1,22 @@
+.info-content {
+    display: flex;
+    margin: 0 10%;
+    justify-content: center;
+}
+
+.info-content h3 {
+    margin: 2%;
+    width: 10%;
+}
+
+.info-content .content-right {
+    margin: 2%;
+}
+
+#info img {
+    width: 300px;
+}
+
+.info-text {
+    margin: 20px;
+}

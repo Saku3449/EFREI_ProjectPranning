@@ -1,0 +1,25 @@
+#menu section {
+    margin: 0 5%;
+}
+
+#menu .food {
+    display: flex;
+    justify-content: center;
+}
+
+#menu .menu-left, .menu-right {
+    text-align: center;
+}
+
+#menu img {
+    object-fit:cover;
+    width: 400pt;
+    height: 200pt;
+    margin: 10% 0;
+}
+
+#menu #jump img {
+    width: 50pt;
+    height: 50pt;
+    margin: 0;
+}

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>London Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reverve.css">
+</head>
+
+<body>
+    <header>
+        <p>London Restaurant</p>
+        <div class="header-content">
+            <a href="./index_uk.html">TOP</a>
+            <a href="./about_uk.html">ABOUT US</a>
+            <a href="./menu_uk.html">MENU</a>
+            <a href="./info_uk.html">INFORMATION</a>
+            <a href="./reserve_uk.html">RESERVE</a>
+            <div>
+                <a href="./reserve_fr.html" id="la">FR</a>
+                <a href="./reserve.html" id="la">JP</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>RESERVE A SEAT</h2>
+
+            <div class="reserve">
+                <form name="form">
+                    <div>
+                        <label for="date">Date</label>
+                        <input id="datepicker" type="text" placeholder="date" name="date">
+                    </div>
+
+                    <div>
+                        <label for="time">Day of arrival</label>
+                        <input type="time" list="data-list" name="time" step="1800" /><span></span>
+                        <datalist id="data-list">
+                            <option value="11:00"></option>
+                            <option value="11:30"></option>
+                            <option value="11:00"></option>
+                            <option value="11:30"></option>
+                            <option value="12:00"></option>
+                            <option value="12:30"></option>
+                            <option value="13:00"></option>
+                            <option value="18:00"></option>
+                            <option value="18:30"></option>
+                            <option value="19:00"></option>
+                            <option value="19:30"></option>
+                            <option value="20:00"></option>
+                            <option value="20:30"></option>
+                            <option value="20:00"></option>
+                            <option value="20:30"></option>
+                            <option value="21:00"></option>
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <label for="num">the number of people</label>
+                        <input type="number" name="num">
+                    </div>
+
+                    <div>
+                        <label for="num">Japanese Courses</label>
+                        <input type="number" name="ja">
+                    </div>
+                    <div>
+                        <label for="num">French Course</label>
+                        <input type="number" name="fr">
+                    </div>
+                    <div>
+                        <label for="num">British Course</label>
+                        <input type="number" name="uk">
+                    </div>
+
+                    <div>
+                        <label for="delegate">representative</label>
+                        <input type="text" name="delegate">
+                    </div>
+
+                    <div>
+                        <label for="tel">Phone number</label>
+                        <input type="tel" name="tel">
+                    </div>
+
+                    <div>
+                        <label for="mail">Email Address</label>
+                        <input type="text" name="mail">
+                    </div>
+
+                    <!-- <div>
+                        <label for="course">コース</label>
+                        <select id="menu" name="menu">
+                            <option value=""></option>
+                            <option value="フレンチ">フレンチ</option>
+                            <option value="和食">和食</option>
+                            <option value="イギリス">イギリス</option>
+                        </select>
+                    </div> -->
+
+
+                    <div>
+                        <label for="req">Requests</label>
+                        <textarea name="req" cols="20" rows="10"></textarea>
+                    </div>
+
+                    <input type="button" value="Submit" onclick="return submit_form();">
+                </form>
+            </div>
+            <div id="log"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-line"></div>
+        <div class="footer-content">
+            <p>London Restaurant</p>
+            <div class="footer-content">
+                <div class="footer-content-left">
+                    <p>address ：</p>
+                    <p>TEL：</p>
+                </div>
+                <div class="footer-content-right">
+                    <p>Business Hours：</p>
+                    <p>regular closing day：</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./js/date.js"></script>
+    <script>
+        function submit_form() {
+            let date_arr = form.date.value.split('-')
+            let time = form.time.value
+            let num = form.num.value
+            let ja = form.ja.value
+            let fr = form.fr.value
+            let uk = form.uk.value
+            let del = form.delegate.value
+            let tel = form.tel.value
+            let mail = form.mail.value
+            let req = form.req.value
+
+            console.log(req)
+
+            let addHTML =
+                "<p>Reservation has been completed.</p>" +
+                "<div class='reservation'>" +
+                "<ul>Day of arrival：" + Number(date_arr[1]) + "month" + Number(date_arr[2]) + "day" + time + "</ul>"
+
+            if (ja != 0) {
+                addHTML += "<ul>Japanese Courses：" + ja + "</ul>"
+            }
+            if (fr != 0) {
+                addHTML += "<ul>French Course：" + fr + "</ul>"
+            }
+            if (uk != 0) {
+                addHTML += "<ul>British Course：" + uk + "</ul>"
+            }
+
+            addHTML +=
+                "<ul>representative：" + del + "</ul>" +
+                "<ul>Phone number：" + tel + "</ul>" +
+                "<ul>email ：" + mail + "</ul>"
+
+            if (req) {
+                addHTML +=
+                    "<ul>Requests：" + req + "</ul>"
+            }
+
+            document.getElementById("log").innerHTML = addHTML + "</div>"
+        }
+    </script>
+</body>
+
+</html>

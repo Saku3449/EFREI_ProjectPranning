@@ -1,8 +1,12 @@
+.firstview {
+    background-image: url(../img/counter.jpg);
+}
+
 .story {
     padding: 0 15% 0 15%;
 }
 
-#about img {
+#chef_img {
     object-fit:cover;
     height: 300pt;
     width: 200pt;
@@ -11,11 +15,22 @@
 .chef {
     display: flex;
     padding: 0 20%;
-    margin: 5%;
+    margin: 5% 20%;
+    padding: 5%;
+    background-color: whitesmoke;
 }
 
 .chef_content {
     margin: 0 5%;
+}
+
+#cook {
+    width: 100%;
+}
+
+#caption {
+    font-family: 'Playball', cursive;
+    font-size: 52px;
 }
 
 main p {

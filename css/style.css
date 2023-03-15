@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Playball', cursive;
     font-family: 'Playfair Display', serif;
 }
 
@@ -128,6 +129,10 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center
+}
+
+.footer-content img {
+    width: 50px;
 }
 
 

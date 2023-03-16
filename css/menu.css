@@ -21,6 +21,12 @@
     margin-top: 110px;
 }
 
+.slider img {
+    width: 70%;
+    height: auto;
+    margin: 4% 15%;
+}
+
 #menu section {
     background-color: whitesmoke;
     padding: 5%;

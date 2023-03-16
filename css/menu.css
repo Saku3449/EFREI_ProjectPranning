@@ -1,5 +1,5 @@
 #menu section {
-    margin: 0 5%;
+    margin: 0 10%;
 }
 
 #menu .food {
@@ -11,15 +11,59 @@
     text-align: center;
 }
 
-#menu img {
-    object-fit:cover;
-    width: 400pt;
-    height: 200pt;
-    margin: 10% 0;
-}
-
 #menu #jump img {
     width: 50pt;
     height: 50pt;
     margin: 0;
+}
+
+.slider {
+    margin-top: 110px;
+}
+
+#menu section {
+    background-color: whitesmoke;
+    padding: 5%;
+}
+
+#menu h3 {
+    font-family: 'Playball', cursive;
+    font-size: 48px;
+}
+
+.menu-content {
+    display: flex;
+}
+
+.menu-content .left {
+    width: 70%;
+}
+
+.menu-content .right {
+    width: 30%;
+}
+
+.menu-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.one-menu {
+    padding: 3% 10%;
+}
+
+.menu-title {
+    color: yellow;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.menu-detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-detail p {
+    min-width: 50%;
 }

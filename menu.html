@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
 </head>
@@ -28,77 +31,162 @@
         </div>
     </header>
     <main>
+        <div class="slider">
+            <div class="slide-box">
+                <img src="./img/beaf.jpg" alt="">
+            </div>
+            <div class="slide-box">
+                <img src="./img/escargot.jpg" alt="">
+            </div>
+            <div class="slide-box">
+                <img src="./img/sushi.jpg" alt="">
+            </div>
+        </div>
         <section id="menu">
             <h2>MENU</h2>
             <div id="jump">
+                <a href="#uk"><img src="./img/uk.png" alt="uk"></a>
                 <a href="#fr"><img src="./img/fr.png" alt="fr"></a>
                 <a href="#ja"><img src="./img/ja.png" alt="ja"></a>
-                <a href="#uk"><img src="./img/uk.png" alt="en"></a>
             </div>
-            <section id="fr">
-                <div class="food">
-                    <div class="menu-left">
-                        <img src="./img/foiegras.jpg" alt="フォアグラ">
-                        <img src="./img/escargot.jpg" alt="エスカルゴ">
-                    </div>
-                    <div class="menu-right">
-                        <img src="./img/raclette.jpg" alt="ラクレット">
-                        <img src="./img/wine.jpg" alt="ワイン">
-                    </div>
-                </div>
-                <div class="menu-list">
-                    <li>フォアグラ</li>
-                    <li>ラクレット</li>
-                    <li>エスカルゴ</li>
-                </div>
-                <div id="note">
-                    <li>halad food</li>
-                    <li>for vegan</li>
-                    <li>Price：120lb</li>
-                </div>
-            </section>
-            <section id="ja">
-                <div class="food">
-                    <div class="menu-left">
-                        <img src="./img/sushi.jpg" alt="すし">
-                        <img src="./img/tempura.jpg" alt="天ぷら">
-                    </div>
-                    <div class="menu-right">
-                        <img src="./img/sukiyaki.jpg" alt="すき焼き">
-                        <img src="./img/sake.jpg" alt="日本酒">
-                    </div>
-                </div>
-                <div class="menu-list">
-                    <li>フォアグラ</li>
-                    <li>ラクレット</li>
-                    <li>エスカルゴ</li>
-                </div>
-                <div id="note">
-                    <li>halad food</li>
-                    <li>for vegan</li>
-                    <li>Price：120lb</li>
-                </div>
-            </section>
             <section id="uk">
-                <div class="food">
-                    <div class="menu-left">
-                        <img src="./img/beaf.jpg" alt="牛">
-                        <img src="./img/fish.jpg" alt="魚">
+                <h3>British</h3>
+                <div class="menu-content">
+                    <div class="left">
+                        <div class="one-menu">
+                            <p class="menu-title">スープ</p>
+                            <div class="menu-detail">
+                                <p>野菜スープ</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">前菜</p>
+                            <div class="menu-detail">
+                                <p>シーズンプレート</p>
+                                <p>ガーリックトースト</p>
+                                <p>サラダ</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">主菜</p>
+                            <div class="menu-detail">
+                                <p>魚の煮物</p>
+                                <p>ビーフのデミグラスソース</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">デザート</p>
+                            <div class="menu-detail">
+                                <p>チョコレートケーキ</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">お飲み物</p>
+                            <div class="menu-detail">
+                                <p>赤ワイン</p>
+                                <p>白ワイン</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="menu-right">
-                        <img src="./img/ram.jpg" alt="羊">
-                        <img src="./img/uk_sake.jpg" alt="酒">
+                    <div class="right">
+                        <img src="./img/soup_uk.jpg" alt="">
+                        <img src="./img/fish_uk.jpg" alt="">
+                        <img src="./img/ram.jpg" alt="">
+                        <img src="./img/wine.jpg" alt="">
                     </div>
                 </div>
-                <div class="menu-list">
-                    <li>フォアグラ</li>
-                    <li>ラクレット</li>
-                    <li>エスカルゴ</li>
+            </section>
+
+            <section id="fr">
+                <h3>French</h3>
+                <div class="menu-content">
+                    <div class="left">
+                        <div class="one-menu">
+                            <p class="menu-title">スープ</p>
+                            <div class="menu-detail">
+                                <p>魚のスープ</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">前菜</p>
+                            <div class="menu-detail">
+                                <p>フォアグラのポアレ</p>
+                                <p>ラクレット</p>
+                                <p>ブルゴーニュ風エスカルゴ</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">主菜</p>
+                            <div class="menu-detail">
+                                <p>仔牛肉の包み焼き</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">デザート</p>
+                            <div class="menu-detail">
+                                <p>フォンダン・オ・ショコラ</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">お飲み物</p>
+                            <div class="menu-detail">
+                                <p>キールロイヤル</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="./img/soup_fr.jpg" alt="">
+                        <img src="./img/escargot.jpg" alt="">
+                        <img src="./img/beaf.jpg" alt="">
+                        <img src="./img/uk_sake.jpg" alt="">
+                    </div>
                 </div>
-                <div id="note">
-                    <li>halad food</li>
-                    <li>for vegan</li>
-                    <li>Price：120lb</li>
+            </section>
+
+            <section id="ja">
+                <h3>Japanese</h3>
+                <div class="menu-content">
+                    <div class="left">
+                        <div class="one-menu">
+                            <p class="menu-title">スープ</p>
+                            <div class="menu-detail">
+                                <p>スープ</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">前菜</p>
+                            <div class="menu-detail">
+                                <p>前菜三種盛り</p>
+                                <p>天ぷら</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">主菜</p>
+                            <div class="menu-detail">
+                                <p>寿司</p>
+                                <p>すき焼き</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">デザート</p>
+                            <div class="menu-detail">
+                                <p>茶碗蒸し</p>
+                                <p>栗きんとん</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">お飲み物</p>
+                            <div class="menu-detail">
+                                <p>梅酒</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="./img/tempura.jpg" alt="">
+                        <img src="./img/sushi.jpg" alt="">
+                        <img src="./img/sukiyaki.jpg" alt="">
+                        <img src="./img/sake.jpg" alt="">
+                    </div>
                 </div>
             </section>
         </section>
@@ -117,6 +205,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app_menu.js"></script>
 </body>
 
 </html>

@@ -14,14 +14,14 @@
 
 .chef {
     display: flex;
-    padding: 0 20%;
-    margin: 5% 20%;
+    margin: 5% 15%;
     padding: 5%;
     background-color: whitesmoke;
 }
 
 .chef-left * {
     text-align: center;
+    width: 300px;
 }
 
 .chef_content {
@@ -35,6 +35,10 @@
 #caption { 
     font-family: 'Playball', cursive;
     font-size: 52px;
+}
+
+.caption-text {
+    text-align: left;
 }
 
 main p {

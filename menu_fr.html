@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
 </head>
@@ -16,105 +19,174 @@
     <header>
         <p>London Restaurant</p>
         <div class="header-content">
-            <a href="./index_fr.html">TOP</a>
-            <a href="./about_fr.html">ABOUT US</a>
-            <a href="./menu_fr.html">MENU</a>
-            <a href="./info_fr.html">INFORMATION</a>
-            <a href="./reserve_fr.html">RESERVE</a>
+            <a href="./index.html">TOP</a>
+            <a href="./about.html">ABOUT US</a>
+            <a href="./menu.html">MENU</a>
+            <a href="./info.html">INFORMATION</a>
+            <a href="./reserve.html">RESERVE</a>
             <div>
-                <a href="./menu.html" id="la">JP</a>
+                <a href="./menu_fr.html" id="la">FR</a>
                 <a href="./menu_uk.html" id="la">UK</a>
             </div>
         </div>
     </header>
     <main>
+        <div class="slider">
+            <div class="slide-box">
+                <img src="./img/beaf.jpg" alt="">
+            </div>
+            <div class="slide-box">
+                <img src="./img/escargot.jpg" alt="">
+            </div>
+            <div class="slide-box">
+                <img src="./img/sushi.jpg" alt="">
+            </div>
+        </div>
         <section id="menu">
             <h2>MENU</h2>
             <div id="jump">
+                <a href="#uk"><img src="./img/uk.png" alt="uk"></a>
                 <a href="#fr"><img src="./img/fr.png" alt="fr"></a>
                 <a href="#ja"><img src="./img/ja.png" alt="ja"></a>
-                <a href="#uk"><img src="./img/uk.png" alt="en"></a>
             </div>
-            <section id="fr">
-                <div class="food">
-                    <div class="menu-left">
-                        <img src="./img/foiegras.jpg" alt="escalope de fois gras poêlée">
-                        <img src="./img/escargot.jpg" alt="escargot bourguignon">
-                    </div>
-                    <div class="menu-right">
-                        <img src="./img/raclette.jpg" alt="raclette">
-                        <img src="./img/wine.jpg" alt="vin">
-                    </div>
-                </div>
-                <div class="menu-list">
-                    <li>kir royal</li>
-                    <li>escargot bourguignon</li>
-                    <li>soupe de poisson</li>
-                    <li>escalope de fois gras poêlée</li>
-                    <li>raclette</li>
-                    <li>paupiette de veau</li>
-                    <li>pot au feu</li>
-                    <li>fondant au chocolat</li>
-                    <li>vin</li>
-                </div>
-                <div id="note">
-                    <li>nourriture halal:Possible</li>
-                    <li>Nourriture végétalienne:Possible</li>
-                    <li>prix：120￡</li>
-                </div>
-            </section>
-            <section id="ja">
-                <div class="food">
-                    <div class="menu-left">
-                        <img src="./img/sushi.jpg" alt="sushi">
-                        <img src="./img/tempura.jpg" alt="tempura">
-                    </div>
-                    <div class="menu-right">
-                        <img src="./img/sukiyaki.jpg" alt="sukiyaki">
-                        <img src="./img/sake.jpg" alt="saké">
-                    </div>
-                </div>
-                <div class="menu-list">
-                    <li>vin de prune</li>
-                    <li>assortiment de trois entrées</li>
-                    <li>tempura</li>
-                    <li>sushi</li>
-                    <li>sukiyaki</li>
-                    <li>crème aux oeufs à la vapeur</li>
-                    <li>pâte de châtaigne</li>
-                    <li>saké</li>
-                </div>
-                <div id="note">
-                    <li>nourriture halal:Possible</li>
-                    <li>Nourriture végétalienne:Possible</li>
-                    <li>prix：120￡</li>
-                </div>
-            </section>
             <section id="uk">
-                <div class="food">
-                    <div class="menu-left">
-                        <img src="./img/beaf.jpg" alt="ragoût de boeuf sauce demi-glace">
-                        <img src="./img/fish.jpg" alt="poisson bouilli">
+                <h3>British</h3>
+                <div class="menu-content">
+                    <div class="left">
+                        <div class="one-menu">
+                            <p class="menu-title">Soupe</p>
+                            <div class="menu-detail">
+                                <p>soupe de légumes</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">Hors d'œuvres</p>
+                            <div class="menu-detail">
+                                <p>assiette de saison</p>
+                                <p>toast à l'ail</p>
+                                <p>salade</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">Plat principal</p>
+                            <div class="menu-detail">
+                                <p>Ragoût de poisson</p>
+                                <p>Viande de bœuf en sauce demi-glace</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">Dessert</p>
+                            <div class="menu-detail">
+                                <p>gâteau au chocolat</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">Boissons</p>
+                            <div class="menu-detail">
+                                <p>vin rouge</p>
+                                <p>vin blanc</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="menu-right">
-                        <img src="./img/ram.jpg" alt="viande d'agneau grillée aux herbes">
-                        <img src="./img/uk_sake.jpg" alt="酒">
+                    <div class="right">
+                        <img src="./img/soup_uk.jpg" alt="">
+                        <img src="./img/fish_uk.jpg" alt="">
+                        <img src="./img/ram.jpg" alt="">
+                        <img src="./img/wine.jpg" alt="">
                     </div>
                 </div>
-                <div class="menu-list">
-                    <li>assiette de saison</li>
-                    <li>soupe aux légumes</li>
-                    <li>pain grillé à l'ail</li>
-                    <li>poisson bouilli</li>
-                    <li>viande d'agneau grillée aux herbes</li>
-                    <li>ragoût de boeuf sauce demi-glace</li>
-                    <li>gateau au chocolat</li>
-                    <li>gin</li>
+            </section>
+
+            <section id="fr">
+                <h3>French</h3>
+                <div class="menu-content">
+                    <div class="left">
+                        <div class="one-menu">
+                            <p class="menu-title">Soupe</p>
+                            <div class="menu-detail">
+                                <p>soupe de poisson</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">Hors d'œuvres</p>
+                            <div class="menu-detail">
+                                <p>poire de foie gras</p>
+                                <p>raclette</p>
+                                <p>escargot bourguignon</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">Plat principal</p>
+                            <div class="menu-detail">
+                                <p>veau cuit au four en wraps</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">Dessert</p>
+                            <div class="menu-detail">
+                                <p>fondant au chocolat</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">Boissons</p>
+                            <div class="menu-detail">
+                                <p>kiel royal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="./img/soup_fr.jpg" alt="">
+                        <img src="./img/escargot.jpg" alt="">
+                        <img src="./img/beaf.jpg" alt="">
+                        <img src="./img/uk_sake.jpg" alt="">
+                    </div>
                 </div>
-                <div id="note">
-                    <li>nourriture halal:Possible</li>
-                    <li>Nourriture végétalienne:Possible</li>
-                    <li>prix：120￡</li>
+            </section>
+
+            <section id="ja">
+                <h3>Japanese</h3>
+                <div class="menu-content">
+                    <div class="left">
+                        <div class="one-menu">
+                            <p class="menu-title">Soupe</p>
+                            <div class="menu-detail">
+                                <p>soupe au bouillon clair</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">Hors d'œuvres</p>
+                            <div class="menu-detail">
+                                <p>trois sortes d'amuse-gueule</p>
+                                <p>tempura</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">Plat principal</p>
+                            <div class="menu-detail">
+                                <p>sushi</p>
+                                <p>sukiyaki</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">Dessert</p>
+                            <div class="menu-detail">
+                                <p>crème aux œufs salée</p>
+                                <p>purée de patates douces aux marrons doux</p>
+                            </div>
+                        </div>
+                        <div class="one-menu">
+                            <p class="menu-title">Boissons</p>
+                            <div class="menu-detail">
+                                <p>liqueur d'ume</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="./img/tempura.jpg" alt="">
+                        <img src="./img/sushi.jpg" alt="">
+                        <img src="./img/sukiyaki.jpg" alt="">
+                        <img src="./img/sake.jpg" alt="">
+                    </div>
                 </div>
             </section>
         </section>
@@ -133,6 +205,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app_menu.js"></script>
 </body>
 
 </html>

@@ -27,7 +27,6 @@
 }
 
 #menu h3 {
-    /* font-family: 'Playball', cursive; */
     font-size: 48px;
 }
 
@@ -56,6 +55,7 @@
 .menu-title {
     color: orange;
     font-size: 32px;
+    font-style: italic;
     margin-bottom: 5px;
 }
 

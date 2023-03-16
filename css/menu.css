@@ -73,3 +73,7 @@
 .menu-detail p {
     min-width: 50%;
 }
+
+.child .menu-title {
+    color: rgb(153, 185, 59);
+}

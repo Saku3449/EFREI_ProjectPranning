@@ -20,3 +20,7 @@
 .info-text {
     margin: 20px;
 }
+
+iframe {
+    width: 90vw;
+}
